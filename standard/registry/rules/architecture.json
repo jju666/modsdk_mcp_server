@@ -129,7 +129,7 @@
       "do": ["使用仓库相对路径、稳定标识和调用方参数", "只保留跨项目成立的规则"],
       "avoid": ["写入开发机绝对路径", "写入团队、组件、业务或用户专名", "把单项目目录结构当作通用结构"],
       "positive_examples": ["standard/registry/rules/python.json", "由调用方传入目标包根目录"],
-      "negative_examples": ["C:\\Users\\developer\\workspace\\component", "在规则中硬编码某个业务组件名"],
+      "negative_examples": ["<LOCAL_WORKSPACE>/component", "在规则中硬编码某个业务组件名"],
       "keywords": ["可移植", "绝对路径", "本地耦合", "业务专名", "通用规则"],
       "source_ids": ["curated-modsdk-engineering-practices"],
       "detector": null

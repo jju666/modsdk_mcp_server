@@ -72,7 +72,7 @@ _MODULE_NAME_RE = re.compile(r"^[A-Za-z_][A-Za-z0-9_]*(?:\.[A-Za-z_][A-Za-z0-9_]
 _RULE_ID_PATTERN = r"^[A-Z][A-Z0-9]*(?:-[A-Z0-9]+)+$"
 _UNREVIEWED_39_BOUNDARY = "尚无可读的 ModSDK 3.9 Python 运行时源码复核"
 _LOCAL_PATH_RE = re.compile(
-    r"(?:\b[A-Za-z]:[\\/][^\s\"'<>]+|\\\\[^\\/\s]+[\\/][^\s\"'<>]+|/(?:home|Users)/[^\s\"'<>]+)",
+    r"(?:(?<![A-Za-z0-9])[A-Za-z]:[\\/][^\s\"'<>]+|\\\\[^\\/\s]+[\\/][^\s\"'<>]+|(?<![A-Za-z0-9:/])/(?:home|Users)/[^\s\"'<>]+)",
     re.IGNORECASE,
 )
 
